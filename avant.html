@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+	<script src="https://rawgit.com/gasolin/aframe-href-component/master/dist/aframe-href-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+		<img id="logo" src="logo.png">
+		<img id="ground" src="test.jpg">
+		<img id="veille" src="veille.jpg">
+		<img id="linkedin" src="linkedin.png">
+	
+		<!--  Divers  -->
+		<a-sky color="gray" rotation="-20 -53 0"></a-sky>
+		<a-camera position="0 2 0"><a-cursor color="red"/></a-camera>
+		<a-plane position="0 0 0" color="silver" height="50" width="50" rotation="-90 0 0"></a-plane>
+	  
+		<!--  Logo enzo-ruet  -->
+		<a-image src="#logo" width="8" position="0 3 -11" material="src:#logo" rotation="0 0 0">
+		</a-image>
+
+		<!--  Fond blanc logo enzo-ruet  -->
+		<a-box position="0 1 -12" width="12" height="2" color="white">
+		</a-box>
+		<a-box position="0 3 -12" width="12" height="2" color="white">
+		</a-box>
+		<a-box position="0 5 -12" width="12" height="2" color="white">
+		</a-box>
+		
+		<!--  Logo veille  -->
+		<a-box position="13 1 -5" rotation="0 20 0" width="3" height="3" depth="3"  material="src:#veille">
+		</a-box>
+		
+		<!--  Logo linkedin  -->
+		<a-box position="-13 1 0" side="front"  width="3" height="3" depth="3"  material="src:#linkedin">
+    </a-scene>
+  </body>
+</html>
